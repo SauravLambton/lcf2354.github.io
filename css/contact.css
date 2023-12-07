@@ -1,0 +1,113 @@
+
+/* Wrapper for the entire contact form */
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styles for the contact form */
+.contact-wrapper form {
+    padding: 40px;
+    background: #fff;
+    box-shadow: -2px 1px 15px -5px rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+/* Styles for list items within the contact form */
+.contact-wrapper ol li {
+    line-height: 2;
+}
+
+/* Styles for fieldsets within the contact form */
+.contact-wrapper fieldset {
+    border: 10px solid #eee;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Styles for legends within the contact form */
+.contact-wrapper legend {
+    background: #fff;
+    padding: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Styles for a custom form section */
+.custom-form {
+    padding: 10px;
+    background: #eee;
+    margin: 10px 0;
+}
+
+/* Styles for labels within the custom form */
+.custom-form label {
+    display: block;
+}
+
+/* Styles for the textarea within the custom form */
+.custom-form textarea {
+    width: 93%;
+    padding: 0 20px;
+    height: 100px;
+    margin-top: 10px;
+    border: 0;
+}
+
+/* Styles for input elements within the custom form */
+.custom-form input {
+    width: 93%;
+    padding: 0 20px;
+    height: 35px;
+    margin-top: 10px;
+    border: 0;
+}
+
+/* Styles for select elements within the custom form */
+.custom-form select {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border: 0;
+}
+
+/* Styles for the method wrapper, including flex layout */
+.method-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styles for the methods section within the method wrapper */
+.method-wrapper .methods {
+    width: 200px;
+}
+
+/* Styles for input elements within the methods section */
+.method-wrapper .methods input {
+    width: 25px;
+}
+
+/* Styles for the submit button within the form */
+form button {
+    border: 0;
+    border-radius: 0;
+    padding: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background: #d72517;
+}
+
+/* Media query for responsive design on smaller screens */
+@media only screen and (max-width: 600px) {
+    .contact-wrapper form {
+        width: 90%;
+        padding: 0;
+    }
+    .custom-form textarea,
+    .custom-form input {
+        width: 82%;
+    }
+}

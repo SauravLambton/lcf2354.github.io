@@ -1,0 +1,587 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Step 3: Set the background color for the website */
+body {
+    background-color: #f5f5f5;
+}
+
+/* Set the width of the vertical scroll bar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Set the width of the horizontal scroll bar */
+::-webkit-scrollbar-horizontal {
+  height: 0px;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-btn {
+    display: none; /* Initially hide the mobile menu button on larger screens */
+    cursor: pointer;
+}
+
+/* Step 4: Style the container element to set the width and center the page */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*Css Overflow Control*/
+.wrapper{
+    position: relative;
+    overflow: hidden;
+}
+/* Title Section Global CSS */
+.title-section {
+    display: block;
+    text-align: center;
+}
+
+.title-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #1e223f;
+}
+
+/* Top Header */
+.top-header {
+    background-color: #1e223f;
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.top-header p {
+    color: #fff;
+}
+
+/*Logo*/
+header nav .logo {
+    width: 20%;
+}
+
+header nav .logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Nav */
+header nav {
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+header nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: all linear .3s;
+}
+
+header nav ul li a:hover {
+    color: #d72517;
+}
+
+header nav ul li:last-child a {
+    background-color: #d72517;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 3px solid transparent;
+}
+
+header nav ul li:last-child a:hover {
+    background-color: transparent;
+    border-color: #d72517;
+    color: #d72517;
+}
+
+/* Main */
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: #fff;
+}
+
+/*Welcome Section*/
+.welcome-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+/*Welcome Image*/
+.welcome-wrapper .welcome-image {
+    width: 40%;
+}
+
+.welcome-wrapper .welcome-image img {
+    width: 100%;
+    height: auto;
+}
+
+/*Welcome Content*/
+.welcome-wrapper .welcome-content {
+    width: 60%;
+    padding-left: 40px;
+}
+
+.welcome-wrapper .welcome-content p {
+    font-size: 17px;
+    line-height: 2;
+    margin: 10px 0;
+}
+
+/*Welcome Content List*/
+.welcome-wrapper .welcome-content ul{
+    margin-left: 15px;
+}
+
+.welcome-wrapper .welcome-content ul li {
+    list-style: disc;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.welcome-wrapper .title-section {
+    text-align: left;
+}
+
+/*Welcome Button*/
+.welcome-wrapper .welcome-btn a {
+    text-decoration: none;
+    display: inline-block;
+    color: #d72517;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 3px solid #d72517;
+    font-weight: bold;
+    transition: all linear .3s;
+    margin-top: 20px;
+}
+
+.welcome-wrapper .welcome-btn:hover a {
+    background-color: #d72517;
+    color: #fff;
+}
+
+/* Shop Section */
+.shop-section {
+    background-color: #fafafa;
+    padding: 60px 0;
+}
+
+.shop-section .title-section p {
+    margin-bottom: 30px;
+}
+
+.shop-section .shop-product-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*Shop Section single product*/
+.shop-section .shop-product-wrapper .single-product {
+    width: 23%;
+    box-shadow: 2px 2px 11px -5px rgba(0,0,0,0.72);
+    -webkit-box-shadow: 2px 2px 11px -5px rgba(0,0,0,0.72);
+    -moz-box-shadow: 2px 2px 11px -5px rgba(0,0,0,0.72);
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+}
+
+/*Single Product Image*/
+.shop-product-wrapper .single-product .product-image {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.shop-product-wrapper .single-product .product-image img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    transition: all linear .3s;
+}
+
+.shop-product-wrapper .single-product:hover .product-image img {
+    transform: scale(1.2);
+}
+
+.shop-product-wrapper .single-product .product-image h5 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    background-color: #d72517;
+    color: #fff;
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 10px 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.shop-product-wrapper .single-product .product-image h5 span{
+    text-decoration: line-through;
+    opacity: .3;
+}
+
+.shop-product-wrapper .single-product .sale{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 9;
+    background: #f6ff00;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+.shop-product-wrapper .single-product .product-content {
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.shop-product-wrapper .single-product .product-content h4 {
+    font-size: 18px;
+}
+
+.shop-product-wrapper .single-product .buy-btn {
+    display: block;
+}
+
+.shop-product-wrapper .single-product .buy-btn a {
+    text-decoration: none;
+    display: inline-block;
+    color: #d72517;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 3px solid #d72517;
+    font-weight: bold;
+    transition: all linear .3s;
+    margin-top: 20px;
+}
+
+.shop-product-wrapper .single-product .buy-btn a:hover {
+    background-color: #d72517;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #1e223f;
+    padding: 60px 0;
+    display: block;
+    text-align: center;
+}
+
+/*Footer Logo*/
+footer .footer-logo {
+    width: 20%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+footer .footer-logo img {
+    width: 100%;
+    height: auto;
+}
+
+footer p {
+    color: #fff;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    color: #d72517;
+    font-weight: bold;
+}
+
+/*contact-wrapper*/
+.contact-wrapper{
+    background-color: #fafafa;
+    padding:50px 0;
+}
+
+/*Cotact Page form*/
+.contact-wrapper form{
+    width:70%;
+    margin: auto;
+}
+
+/*Cotact Page form  Input fields*/
+.contact-wrapper .custom-input{
+    width: 100%;
+    padding:15px;
+    border:4px solid #eee;
+    border-radius: 0;margin-bottom: 30px;
+}
+
+/*Cotact Page form Placeholder for input fields*/
+.contact-wrapper .custom-input::placeholder{
+    font-size: 18px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+/*Cotact Page form Textarea*/
+.contact-wrapper textarea.custom-input{
+    height:100px;
+}
+
+/*Cotact Page form Submit Button*/
+.contact-wrapper .submit-btn{
+    width: 100%;
+    padding:15px 0;
+    text-align: center;
+    background-color: #d72517;
+    border:0;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:20px;
+    cursor: pointer;
+}
+
+/*Specials Page*/
+.shop-section.specials-section{
+    background: #eee;
+}
+.shop-section.specials-section .title-section p{
+    margin-bottom: 50px;
+}
+
+/*allcategories*/
+.allcategories{
+background: #dcd2d2;
+padding: 50px 0;
+}
+.allcategories ol {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.allcategories ol li {
+    width: 13%;
+    list-style: none;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 2px 3px 10px 0px rgba(101, 101, 101, 0.20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+/*Video*/
+video{
+    width: 100%;
+}
+/*audio*/
+audio{
+    background: #1e223f;
+    width: 100%;
+    padding: 10px;
+    border-radius: 60px;
+    margin: 10px 0;
+}
+/*faq-page*/
+.faq-page section{
+    padding:50px 0;
+}
+.faq-page .title-section h2{
+    margin-bottom: 40px;
+}
+
+.faq-page article{
+    margin-bottom:20px;
+}
+
+.faq-page article h3{
+    margin-bottom: 15px;
+}
+.faq-page p{
+    line-height:2;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 992px) {
+    
+    /*Header*/
+    header nav .container{
+        flex-direction: column;
+    }
+    header nav ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+    header nav ul li{
+        margin-left: 0;
+    }
+
+    /* Shop Section*/
+    .shop-section .shop-product-wrapper .single-product{
+        width: 45%;
+        margin: 20px 0;
+    }
+
+    .allcategories ol li{
+        width: 25%;
+    }
+
+    .allcategories ol{
+        flex-wrap: wrap;
+    }
+
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* mobile Menu Btn*/
+    .mobile-menu-btn{
+        display: block;
+        background-color: red;
+        height: 15px;
+        width: 20px;
+        padding:20px;
+    }
+    .mobile-menu-btn span{
+        height:1px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        margin-bottom: 5px;
+    }
+    /* Titles*/
+    .title-section h2 {
+        font-size: 25px;
+    }
+
+    /* Top Header Content*/
+    .top-header .container{
+        flex-direction: column;
+    }
+
+    /* Header Nav*/
+    header nav ul{
+        flex-direction: column;
+        display: none;
+    }
+    header nav ul.active{
+        display: flex;
+    }
+    /* Header Logo*/
+    header nav .logo{
+        width: 60%;
+    }
+    /* Mobile Menu*/
+    header nav ul li{
+        width: 100%;
+    }
+    header nav ul li a{
+        display: block;
+        background: #1e223f;
+        width: 100%;
+        padding: 15px 20px;
+        color: #fff;
+    }
+    /*container*/
+    .container{
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    header nav ul li:last-child a{
+        border-radius: 0;
+    }
+    /* Welcome Section*/
+    .welcome-wrapper{
+        flex-direction: column;
+    }
+
+    .welcome-wrapper .welcome-content,
+    .welcome-wrapper .welcome-image{
+        width: 100%;
+    }   
+
+    .welcome-wrapper .welcome-content{
+        padding:20px;
+        width: 90%;
+    }
+
+    /* Shop*/
+    .shop-section .shop-product-wrapper .single-product{
+        width: 100%;
+        margin:15px;
+    }
+
+    /* audio*/
+    audio{
+        width: 80%;
+    }
+
+
+}

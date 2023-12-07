@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Saurav Ghimire - C0921974 -->
+<!-- contact.html -->
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FAQ</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/contact.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="wrapper">
+      <header>
+         <div class="top-header">
+            <div class="container">
+               <p>Welcome to Sarnia Shoes</p>
+               <p>Call : +1 437 665 1828</p>
+            </div>
+         </div>
+         <nav>
+            <div class="container">
+               <a href="index.html" class="logo">
+               <img src="images/logo.png" alt="Company Logo">
+               </a>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="specials.html">Specials</a></li>
+                  <li><a href="training.html">Training</a></li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="faqs.html">FAQs</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="shop.html">Shop Now</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+       <!-- Mobile Menu Button -->
+      <div class="mobile-menu-btn" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <main class="contact-wrapper">
+         <div class="container">
+            <!-- Contact Title -->
+            <div class="title-section">
+               <h2>Contact us</h2>
+            </div>
+            <div class="form-wrapper">
+            <!-- Form -->
+               <form action="#" method="post">
+                 <ol>
+                     <li>Fill out the form below to get in touch with us.</li>
+                     <li>All fields marked with * are required.</li>
+                 </ol>
+
+                 <fieldset>
+                     <legend>Your Information</legend>
+
+                     <div class="custom-form">
+                       <label for="name">Name *</label>
+                       <input type="text" id="name" name="name" required>
+                     </div>
+
+                     <div class="custom-form">
+                       <label for="email">Email *</label>
+                       <input type="email" id="email" name="email" required>
+                     </div>
+
+                     <div class="custom-form">
+                       <label for="phone">Phone</label>
+                       <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                     </div>
+
+                     <div class="custom-form">
+                       <label for="message">Message *</label>
+                       <textarea id="message" name="message" rows="4" required></textarea>
+                     </div>
+                 </fieldset>
+
+                 <fieldset>
+                     <legend>Additional Information</legend>
+                     <div class="custom-form">
+                     <label for="date">Preferred Date</label>
+                     <input type="date" id="date" name="date">
+                     </div>
+                     <div class="custom-form">
+                     <label>Preferred Contact Method</label>
+                     <div class="method-wrapper">
+                        <div class="methods">
+                           <label for="contact-email">Email</label>
+                           <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                        </div>
+                        <div class="methods">
+                           <label for="contact-phone">Phone</label>
+                           <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        </div>
+                     </div>
+                     </div>
+                     
+                     <div class="custom-form">
+                     <div class="method-wrapper">
+                           <div class="methods">
+                     <label for="subscribe">Subscribe to Newsletter</label>
+                     <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                     </div>
+                     </div>
+                     </div>
+                     <div class="custom-form">
+                     <label for="category">Category *</label>
+                     <select id="category" name="category" required>
+                         <option value="general">General Inquiry</option>
+                         <option value="support">Technical Support</option>
+                         <option value="sales">Sales Inquiry</option>
+                     </select>
+                     </div>
+                 </fieldset>
+
+                 <button type="submit">Submit Request</button>
+                 <button type="reset">Reset Form</button>
+             </form>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div class="footer-logo">
+            <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Company Logo">
+            </a>            
+         </div>
+         <p>&copy; Copyright 2099. All Rights Reserved.</p>
+         <a href="mailto:sauravghimire0123@gmail.com">Request information</a>
+         <p>Saurav Ghimire &nbsp; C0921974</p>
+      </footer>
+      </div>
+
+      <script src="js/script.js"></script>
+   </body>
+</html>
